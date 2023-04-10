@@ -11,13 +11,12 @@ const taskRouter = require("./routes/task-router.js");
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
-app.use(taskRouter);
+app.use("/api/tasks",taskRouter);
 
 connectDB();
 app.listen(PORT, () => {
     console.log(` Server is running in http://localhost:${PORT}`)
 })
-
 
 
 

@@ -8,7 +8,7 @@ const connectDB = require("./config/connectDB");
 
 const taskRouter = require("./routes/task-router.js");
 app.use(cors({
-    origin:["http://localhost:3000","https://to-do-list-app.onrender.com"]
+    origin:["http://localhost:3000","https://to-do-list-app-l57x.onrender.com"]
 }));
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));

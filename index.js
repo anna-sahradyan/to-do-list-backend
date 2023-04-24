@@ -27,9 +27,9 @@ app.use("/api/tasks", taskRouter);
 //     })
 //
 // }
-app.use(express.static(path.join(__dirname, "./to-do-list-frontend/build")))
+app.use(express.static(path.join(__dirname, "../to-do-list-frontend/build")))
 app.get("*", function (req, res) {
-    res.sendFile(path.join(__dirname,"./to-do-list-frontend/build/index.html"))
+    res.sendFile(path.join(__dirname,"../to-do-list-frontend/build/index.html"))
 })
 connectDB();
 app.listen(PORT, () => {

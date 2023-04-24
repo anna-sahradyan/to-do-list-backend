@@ -1,4 +1,3 @@
-'use strict'
 const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 8000;
@@ -9,7 +8,7 @@ const connectDB = require("./config/connectDB");
 
 const taskRouter = require("./routes/task-router.js");
 app.use(cors({
-    origin:["http://localhost:3000","https://to-do-list-app.onrender.com",]
+    origin:["http://localhost:3000","https://to-do-list-app.onrender.com"]
 }));
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
